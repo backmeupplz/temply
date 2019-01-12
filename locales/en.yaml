@@ -1,0 +1,9 @@
+name: English
+help: |
+  <b>Temply</b> allows you to create text templates to use in inline mode.
+
+  Create a template with /newtemplate, then start typing <code>@temply_bot *template name*</code> in any chat and select the template to be instantly sent there. If you don't like a template you can also delete it with /deletetemplate. Language can be changed with the /language command.
+
+  If you have any questions, please, read through @borodutch_support. Thank you!
+language: Please, select the language.
+language_selected: <b>Temply</b> now speaks English.

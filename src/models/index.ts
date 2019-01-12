@@ -7,5 +7,7 @@ mongoose.connect(
   { useNewUrlParser: true }
 )
 
+mongoose.set('useCreateIndex', true)
+
 // Export models
-// export * from './Chat'
+export * from './User'
