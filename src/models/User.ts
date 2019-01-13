@@ -2,7 +2,7 @@
 import { prop, Typegoose, arrayProp } from 'typegoose'
 
 export class Template {
-  @prop({ required: true })
+  @prop({ required: true, index: true })
   name: string
   @prop({ required: true })
   text: string

@@ -8,6 +8,8 @@ import { setupHelp } from './commands/help'
 import { setupI18N } from './helpers/i18n'
 import { setupLanguage } from './commands/language'
 import { attachUser } from './middlewares/attachUser'
+import { setupNewtemplate } from './commands/newtemplate'
+import { setupInline } from './helpers/inline'
 
 // Check time
 bot.use(checkTime)
@@ -15,10 +17,12 @@ bot.use(checkTime)
 bot.use(attachUser)
 // Setup localization
 setupI18N(bot)
-
+// Setup inline
+setupInline(bot)
 // Setup commands
 setupHelp(bot)
 setupLanguage(bot)
+setupNewtemplate(bot)
 
 // Start bot
 bot.startPolling()
