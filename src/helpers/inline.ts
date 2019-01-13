@@ -18,6 +18,7 @@ export function setupInline(bot: Telegraf<ContextMessageUpdate>) {
       input_message_content: {
         message_text: template.text,
       },
+      is_personal: true,
     }))
     return answerInlineQuery(results, { next_offset: `${offset + 30}` })
   })
