@@ -23,6 +23,7 @@ export function setupInline(bot: Telegraf<ContextMessageUpdate>) {
     return answerInlineQuery(results, {
       next_offset: `${offset + 30}`,
       is_personal: true,
+      cache_time: 0,
     })
   })
 }
