@@ -30,11 +30,16 @@ export function setupNewtemplate(bot: Telegraf<ContextMessageUpdate>) {
     template.name = name
     template.text = text
 
-    ctx.dbuser.templates.push(template)
-    await (ctx.dbuser as any).save()
+    try {
+      await ctx.replyWithHTML(text)
+      ctx.dbuser.templates.push(template)
+      await (ctx.dbuser as any).save()
 
-    await ctx.reply(ctx.i18n.t('newtemplate_success'), Extra.inReplyTo(
-      ctx.message.message_id
-    ) as ExtraReplyMessage)
+      await ctx.reply(ctx.i18n.t('newtemplate_success'), Extra.inReplyTo(
+        ctx.message.message_id
+      ) as ExtraReplyMessage)
+    } catch (err) {
+      await ctx.replyWithHTML(`<code>${err.message}</code>`)
+    }
   })
 }

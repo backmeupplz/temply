@@ -7,6 +7,6 @@ help: |
   If you have any questions, please, read through @borodutch_support. Thank you!
 language: Please, select the language.
 language_selected: <b>Temply</b> now speaks English.
-newtemplate: 'Please, reply to this message with the new template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored.'
-newtemplate_success: Successfully added this template.
+newtemplate: 'Please, reply to this message with the new template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported.'
+newtemplate_success: Successfully added the template above.
 deletetemplate: Please, select template to delete.

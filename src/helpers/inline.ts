@@ -17,6 +17,7 @@ export function setupInline(bot: Telegraf<ContextMessageUpdate>) {
       description: template.text,
       input_message_content: {
         message_text: template.text,
+        parse_mode: 'HTML',
       },
     }))
     return answerInlineQuery(results, {
