@@ -11,6 +11,7 @@ import { attachUser } from './middlewares/attachUser'
 import { setupNewtemplate } from './commands/newtemplate'
 import { setupInline } from './helpers/inline'
 import { setupDeletetemplate } from './commands/deletetemplate'
+import { setupPreview } from './commands/preview'
 
 // Check time
 bot.use(checkTime)
@@ -25,6 +26,7 @@ setupHelp(bot)
 setupLanguage(bot)
 setupNewtemplate(bot)
 setupDeletetemplate(bot)
+setupPreview(bot)
 
 // Start bot
 bot.startPolling()
