@@ -16,6 +16,8 @@ export class User extends Typegoose {
 
   @prop({ required: true, default: 'en' })
   language: string
+  @prop({ required: true, default: false })
+  hidePreview: boolean
 }
 
 // Get User model

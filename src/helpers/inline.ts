@@ -18,6 +18,7 @@ export function setupInline(bot: Telegraf<ContextMessageUpdate>) {
       input_message_content: {
         message_text: template.text,
         parse_mode: 'HTML',
+        disable_web_page_preview: dbuser.hidePreview,
       },
     }))
     return answerInlineQuery(results, {
