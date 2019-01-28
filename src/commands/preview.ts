@@ -6,7 +6,7 @@ export function setupPreview(bot: Telegraf<ContextMessageUpdate>) {
     ctx.dbuser.hidePreview = !ctx.dbuser.hidePreview
     await (ctx.dbuser as any).save()
     ctx.replyWithHTML(
-      ctx.i18n.t(ctx.dbuser.hidePreview ? 'previewOn' : 'previewOff')
+      ctx.i18n.t(ctx.dbuser.hidePreview ? 'previewOff' : 'previewOn')
     )
   })
 }
