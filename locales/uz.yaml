@@ -1,0 +1,14 @@
+name: O`zbekcha
+help: |
+  <b>Temply</b> sizga inline shaklda ishlatish uchun matnli xabarlar (qoliplar) tayyorlashga yordam beradi.
+
+  /newtemplate buyrug`i bilan yangi xabar matni yarating va istalgan chatda <code>@temply_bot xabar_nomi</code> shaklida yozing. Ko`rsatilgan ro`yxatdan kerakli xabarni tanlang va u shu zahoti ochiq turgan chatga yuboriladi. Agar sizga yasalgan xabar yoqmasa, uni /deletetemplate buyrug`i orqali o`chirib tashlashingiz mumkin. Bot tili /language buyrug`i orqali o`zgartirilishi mumkin. Xabarlar prevyularini ko`rsatish yoki berkitishni /preview buyrug`i orqali belgilashingiz mumkin.
+
+  Agar sizda qandaydir savol bo`lsa, iltimos, @borodutch_support kanalimizni o`qing. Rahmat!
+language: Iltimos, tilni tanlang.
+language_selected: <b>Temply</b> endi O`zbekchada gapiradi.
+newtemplate: 'Iltimos, ushbu xabarga javob qilib kerakli xabarni ushbu formatda jo`nating: <code>xabar_nomi: xabar matni</code>. Xabarni javob shaklida yubormasangiz yoki matnli xabardan boshqa xabar yuborsangiz bot unga javob bermaydi. HTML formatlash turini ishlatish mumkin.'
+newtemplate_success: Yuqoridagi xabar muvaffaqiyatli qo`shildi.
+deletetemplate: Iltimos, o`chirib tashlash uchun xabarni tanlang.
+previewOff: Endi xabarlar prevyulari ko`rsatilmaydi.
+previewOn: Endi xabarlar prevyulari ko`rsatiladi.
