@@ -22,7 +22,10 @@ export function setupNewtemplate(bot: Telegraf<ContextMessageUpdate>) {
     ) {
       return next()
     }
-    const name = ctx.message.text.split(': ')[0]
+    let name = ctx.message.text.split(': ')[0]
+    if (name.length > 64) {
+      name = `${name.substring(0, 61)}...`
+    }
     const textArray = ctx.message.text.split(': ')
     textArray.shift()
     const text = textArray.join(': ')
