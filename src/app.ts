@@ -11,7 +11,8 @@ import { attachUser } from './middlewares/attachUser'
 import { setupNewtemplate } from './commands/newtemplate'
 import { setupInline } from './helpers/inline'
 import { setupDeletetemplate } from './commands/deletetemplate'
-import { setupPreview } from './commands/preview'
+import { setupPreview } from './commands/preview'\
+import { setupAppendtemplate } from './commands/appendtemplate'
 
 // Check time
 bot.use(checkTime)
@@ -25,6 +26,7 @@ setupInline(bot)
 setupHelp(bot)
 setupLanguage(bot)
 setupNewtemplate(bot)
+setupAppendtemplate(bot)
 setupDeletetemplate(bot)
 setupPreview(bot)
 
