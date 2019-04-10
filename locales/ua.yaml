@@ -12,5 +12,5 @@ newtemplate_success: Створено нове типове повідомлен
 deletetemplate: Будь-ласка, виберіть типове повідомлення, яке необхідно видалити.
 previewOff: Тепер в типових повідомленнях не буде попереднього перегляду посилань.
 previewOn: Тепер в типових повідомленнях буде з'являтися попередній перегляд посилань.
-appendtemplate: '👍 Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template. Please, use <code>\\n</code> for new lines.'
+appendtemplate: '👍 Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template.'
 appendtemplate_success: Successfully appended the text to the template above.
