@@ -1,0 +1,14 @@
+name: Qazaqsha
+help: |
+  <b>Temply</b> ınlaın-modta úlgіlіk habarlamalardy jasaýǵa múmkіndіk beredі.
+  
+  Úlgіlіk habarlamany /newtemplate komandasy arqyly qurastyrynyz, <code>@temply_bot *úlgіlіk habarlamanyn aty*</code> komandasyn kez kelgen chatqa jaza bastanyz da, úlgіlіk habarlama avtomattyq túrde sonda jіberіledі. Tіldі /language komandasy arqyly aýystyrýǵa bolady. Úlgіlіk habarlamanyn aldyn alý kórýіn /preview komandasy arqyly qosý nemese óshіrýge bolady.
+  
+  Eger de sіzge, qandaı da bіr úlgіlіk habarlama unamasa, ony /deletetemplate komandasy arqyly joıýǵa bolady. Qandaı da bіr suraqtarynyz bolsa, @borodutch_support -ty oqynyz. Rahmet!
+language: Tіldі tańdańyz.
+language_selected: <b>Temply</b> endі qazaqsha sóıleıdі.
+newtemplate: 'Ótіnemіz osy habarlamaǵa <code>úlgіlіk_habarlamanyń_aty: úlgіlіk habarlama</code> formatynda jaýap berіnіz. Basqa da bіr formatta nemese jáı habarlama túrіnde qaıtqan jaýaptar eskerіlmeıdі. Habarlamany HTML formattaýǵa bolady.'
+newtemplate_success: Úlgіlіk habarlama sáttі qosyldy.
+deletetemplate: Joıǵyńyz keletіn, úlgіlіk habarlamany tańdańyz.
+previewOff: Endі úlgіlіk habarlamalarda ssylkalardyń aldyn ala kórýі paıda bolmaıdy.
+previewOn: Endі úlgіlіk habarlamalarda ssylkalardyń aldyn ala kórýі paıda bolady.
