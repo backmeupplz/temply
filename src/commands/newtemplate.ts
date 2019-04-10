@@ -17,7 +17,7 @@ export function setupNewtemplate(bot: Telegraf<ContextMessageUpdate>) {
       !ctx.message.reply_to_message.from.username ||
       ctx.message.reply_to_message.from.username !== bot.options.username ||
       !ctx.message.reply_to_message.text ||
-      !ctx.message.reply_to_message.text.includes(': ') ||
+      !ctx.message.reply_to_message.text.includes('💪') ||
       ctx.message.text.split(': ').length < 2
     ) {
       return next()
