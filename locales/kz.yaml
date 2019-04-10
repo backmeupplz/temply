@@ -7,7 +7,7 @@ help: |
   Eger de sіzge, qandaı da bіr úlgіlіk habarlama unamasa, ony /deletetemplate komandasy arqyly joıýǵa bolady. Qandaı da bіr suraqtarynyz bolsa, @borodutch_support -ty oqynyz. Rahmet!
 language: Tіldі tańdańyz.
 language_selected: <b>Temply</b> endі qazaqsha sóıleıdі.
-newtemplate: 'Ótіnemіz osy habarlamaǵa <code>úlgіlіk_habarlamanyń_aty: úlgіlіk habarlama</code> formatynda jaýap berіnіz. Basqa da bіr formatta nemese jáı habarlama túrіnde qaıtqan jaýaptar eskerіlmeıdі. Habarlamany HTML formattaýǵa bolady.'
+newtemplate: '💪 Ótіnemіz osy habarlamaǵa <code>úlgіlіk_habarlamanyń_aty: úlgіlіk habarlama</code> formatynda jaýap berіnіz. Basqa da bіr formatta nemese jáı habarlama túrіnde qaıtqan jaýaptar eskerіlmeıdі. Habarlamany HTML formattaýǵa bolady.'
 newtemplate_success: Úlgіlіk habarlama sáttі qosyldy.
 deletetemplate: Joıǵyńyz keletіn, úlgіlіk habarlamany tańdańyz.
 previewOff: Endі úlgіlіk habarlamalarda ssylkalardyń aldyn ala kórýі paıda bolmaıdy.
