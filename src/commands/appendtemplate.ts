@@ -1,3 +1,8 @@
+// Dependencies
+import { Telegraf, ContextMessageUpdate, Extra } from 'telegraf'
+import { Template } from '../models'
+import { ExtraReplyMessage } from 'telegraf/typings/telegram-types'
+
 export function setupAppendtemplate(bot: Telegraf<ContextMessageUpdate>) {
   bot.command(['appendtemplate'], ctx => {
     ctx.replyWithHTML(ctx.i18n.t('appendtemplate'))
