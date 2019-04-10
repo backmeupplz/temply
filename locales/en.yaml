@@ -12,3 +12,5 @@ newtemplate_success: Successfully added the template above.
 deletetemplate: Please, select template to delete.
 previewOff: Now templates will not show web preview.
 previewOn: Now templates will show web preview.
+appendtemplate: '👍 Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template. Please, use <code>\n</code> for new lines.'
+appendtemplate_success: Successfully appended the text to the template above.
