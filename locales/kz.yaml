@@ -12,3 +12,5 @@ newtemplate_success: Úlgіlіk habarlama sáttі qosyldy.
 deletetemplate: Joıǵyńyz keletіn, úlgіlіk habarlamany tańdańyz.
 previewOff: Endі úlgіlіk habarlamalarda ssylkalardyń aldyn ala kórýі paıda bolmaıdy.
 previewOn: Endі úlgіlіk habarlamalarda ssylkalardyń aldyn ala kórýі paıda bolady.
+appendtemplate: '👍 Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template. Please, use <code>\n</code> for new lines.'
+appendtemplate_success: Successfully appended the text to the template above.
