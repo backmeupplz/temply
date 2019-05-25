@@ -12,7 +12,7 @@ export function setupInline(bot: Telegraf<ContextMessageUpdate>) {
     templates = templates.splice(offset, 30)
     const results = templates.map(template => ({
       type: 'article',
-      id: template.name,
+      id: template.name.substr(0, 32),
       title: template.name,
       description: template.text,
       input_message_content: {
