@@ -11,7 +11,7 @@ export function setupDeletetemplate(bot: Telegraf<ContextMessageUpdate>) {
 
   bot.action(/r~.+/, async ctx => {
     ctx.dbuser.templates = ctx.dbuser.templates.filter(
-      t => t.name !== ctx.callbackQuery.data.split('~')[1]
+      t => t.name.indexOf(ctx.callbackQuery.data.split('~')[1]) < 0
     )
     await (ctx.dbuser as any).save()
     ctx.editMessageReplyMarkup(templateKeyboard(ctx.dbuser))
@@ -21,7 +21,9 @@ export function setupDeletetemplate(bot: Telegraf<ContextMessageUpdate>) {
 function templateKeyboard(user: User) {
   const result = []
   user.templates.forEach(template => {
-    result.push([m.callbackButton(template.name, `r~${template.name}`)])
+    result.push([
+      m.callbackButton(template.name, `r~${template.name.substr(0, 32)}`),
+    ])
   })
   return m.inlineKeyboard(result)
 }
