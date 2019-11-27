@@ -4,7 +4,7 @@ help: |
 
   Create a template with /newtemplate, then start typing <code>@temply_bot *template name*</code> in any chat and select the template to be instantly sent there. If you don't like a template you can also delete it with /deletetemplate. Language can be changed with the /language command. You can select whether to show web previews for templates or not by calling /preview. You can also add text to existing templates by using /appendtemplate.
 
-  If you have any questions, please, read through @borodutch_support. Thank you!
+  If you have any questions, please, read through @borodutch_support. If you want to support the bot, please, donate through <a href="https://github.com/sponsors/backmeupplz">GitHub Sponsors program here</a>. Thank you!
 language: Please, select the language.
 language_selected: <b>Temply</b> now speaks English.
 newtemplate: '💪 Please, reply to this message with the new template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported.'
