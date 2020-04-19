@@ -4,7 +4,9 @@ help: |
 
   Úlgіlіk habarlamany /newtemplate komandasy arqyly qurastyrynyz, <code>@temply_bot *úlgіlіk habarlamanyn aty*</code> komandasyn kez kelgen chatqa jaza bastanyz da, úlgіlіk habarlama avtomattyq túrde sonda jіberіledі. Tіldі /language komandasy arqyly aýystyrýǵa bolady. Úlgіlіk habarlamanyn aldyn alý kórýіn /preview komandasy arqyly qosý nemese óshіrýge bolady.
 
-  Eger de sіzge, qandaı da bіr úlgіlіk habarlama unamasa, ony /deletetemplate komandasy arqyly joıýǵa bolady. Qandaı da bіr suraqtarynyz bolsa, @borodutch_support -ty oqynyz. If you want to support the bot, please, donate through <a href="https://github.com/sponsors/backmeupplz">GitHub Sponsors program here</a>. Rahmet!
+  Eger de sіzge, qandaı da bіr úlgіlіk habarlama unamasa, ony /deletetemplate komandasy arqyly joıýǵa bolady. Qandaı da bіr suraqtarynyz bolsa, @borodutch_support -ty oqynyz.
+
+  Also check out another one of my projects — <a href="https://todorant.com">Todorant</a> (<a href="https://apps.apple.com/us/app/todorant/id1482078243">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.todorant">Android</a>). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.
 language: Tіldі tańdańyz.
 language_selected: <b>Temply</b> endі qazaqsha sóıleıdі.
 newtemplate: '💪 Ótіnemіz osy habarlamaǵa <code>úlgіlіk_habarlamanyń_aty: úlgіlіk habarlama</code> formatynda jaýap berіnіz. Basqa da bіr formatta nemese jáı habarlama túrіnde qaıtqan jaýaptar eskerіlmeıdі. Habarlamany HTML formattaýǵa bolady.'
