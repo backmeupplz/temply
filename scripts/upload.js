@@ -37,6 +37,7 @@ Object.keys(flattenedLocalizations[firstLanguage]).forEach((key) => {
   console.log(JSON.stringify(result, undefined, 2))
   try {
     await axios.post(`https://localizer.borodutch.com/localizations`, {
+      // await axios.post(`http://localhost:1337/localizations`, {
       localizations: result,
       password: process.env.PASSWORD,
       username: 'borodutch',
