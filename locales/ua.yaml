@@ -1,5 +1,5 @@
 name: Українська
-help: |
+helpTemply: |
   <b>Temply</b> дозволяє створювати типові повідомлення для використання в інлайн-моді.
 
   Створіть типове повідомлення за допомогою команди /newtemplate, почніть писати <code>@temply_bot *назва типового повідомлення*</code> в будь-якому чаті і типове повідомлення автоматично відправиться туди. Мову можна змінити командою /language. Ви можете обрати, показувати попередній перегляд посилань для типових повідомлень чи ні за допомогою команди /preview.
@@ -7,7 +7,7 @@ help: |
   Якщо вам не подобається будь-яке типове повідомлення, його можна видалити за допомогою /deletetemplate. Якщо у вас залишились запитання, будь-ласка, прочитайте @borodutch_support.
 
   Also check out another one of my projects — <a href="https://todorant.com">Todorant</a> (<a href="https://apps.apple.com/us/app/todorant/id1482078243">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.todorant">Android</a>). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.
-language: 'будь-ласка, виберіть мову.'
+languageTemply: 'будь-ласка, виберіть мову.'
 language_selected_temply: <b>Temply</b> тепер говорить українською.
 newtemplate: "\U0001F4AA Будь-ласка, дайте відповідь на це повідомлення у форматі <code>назва_типового_повідомлення: типове повідомлення</code>. Будь-який інший формат або звичайні повідомлення (не відповіді на це повідомлення) будуть проігноровані. Підтримується формат HTML."
 newtemplate_success: Створено нове типове повідомлення.

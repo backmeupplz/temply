@@ -6,7 +6,7 @@ import { ExtraEditMessage } from 'telegraf/typings/telegram-types'
 
 export function setupLanguage(bot: Telegraf<ContextMessageUpdate>) {
   bot.command('language', (ctx) => {
-    ctx.reply(ctx.i18n.t('language'), {
+    ctx.reply(ctx.i18n.t('languageTemply'), {
       reply_markup: languageKeyboard(),
     })
   })
