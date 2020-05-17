@@ -7,12 +7,12 @@ help: |
   If you have any questions, please, read through @borodutch_support.
 
   Also check out another one of my projects — <a href="https://todorant.com">Todorant</a> (<a href="https://apps.apple.com/us/app/todorant/id1482078243">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.todorant">Android</a>). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.
-language: Please, select the language.
+language: 'Please, select the language.'
 language_selected_temply: <b>Temply</b> now speaks English.
-newtemplate: '💪 Please, reply to this message with the new template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported.'
+newtemplate: "\U0001F4AA Please, reply to this message with the new template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported."
 newtemplate_success: Successfully added the template above.
-deletetemplate: Please, select template to delete.
+deletetemplate: 'Please, select template to delete.'
 previewOff: Now templates will not show web preview.
 previewOn: Now templates will show web preview.
-appendtemplate: '👍 Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template.'
+appendtemplate: "\U0001F44D Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template."
 appendtemplate_success: Successfully appended the text to the template above.

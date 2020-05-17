@@ -7,12 +7,12 @@ help: |
   Agar sizda qandaydir savol bo`lsa, iltimos, @borodutch_support kanalimizni o`qing.
 
   Also check out another one of my projects — <a href="https://todorant.com">Todorant</a> (<a href="https://apps.apple.com/us/app/todorant/id1482078243">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.todorant">Android</a>). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.
-language: Iltimos, tilni tanlang.
+language: 'Iltimos, tilni tanlang.'
 language_selected_temply: <b>Temply</b> endi O`zbekchada gapiradi.
-newtemplate: '💪 Iltimos, ushbu xabarga javob qilib kerakli xabarni ushbu formatda jo`nating: <code>xabar_nomi: xabar matni</code>. Xabarni javob shaklida yubormasangiz yoki matnli xabardan boshqa xabar yuborsangiz bot unga javob bermaydi. HTML formatlash turini ishlatish mumkin.'
+newtemplate: "\U0001F4AA Iltimos, ushbu xabarga javob qilib kerakli xabarni ushbu formatda jo`nating: <code>xabar_nomi: xabar matni</code>. Xabarni javob shaklida yubormasangiz yoki matnli xabardan boshqa xabar yuborsangiz bot unga javob bermaydi. HTML formatlash turini ishlatish mumkin."
 newtemplate_success: Yuqoridagi xabar muvaffaqiyatli qo`shildi.
-deletetemplate: Iltimos, o`chirib tashlash uchun xabarni tanlang.
+deletetemplate: 'Iltimos, o`chirib tashlash uchun xabarni tanlang.'
 previewOff: Endi xabarlar prevyulari ko`rsatilmaydi.
 previewOn: Endi xabarlar prevyulari ko`rsatiladi.
-appendtemplate: '👍 Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template.'
+appendtemplate: "\U0001F44D Please, reply to this message with the addition to a template in the format of <code>template_name: template text</code>. Any other format or not replying to this message will be ignored. HTML formatting is supported. Text will be appended to the existing template."
 appendtemplate_success: Successfully appended the text to the template above.
