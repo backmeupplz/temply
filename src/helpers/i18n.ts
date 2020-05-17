@@ -8,7 +8,8 @@ const i18n = new dirtyI18N({
   defaultLanguage: 'en',
   sessionName: 'session',
   useSession: false,
-  allowMissing: false,
+  allowMissing: true,
+  defaultLanguageOnMissing: 'en',
 }) as I18N
 
 export function setupI18N(bot: Telegraf<ContextMessageUpdate>) {

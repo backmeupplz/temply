@@ -8,7 +8,7 @@ help: |
 
   Also check out another one of my projects — <a href="https://todorant.com">Todorant</a> (<a href="https://apps.apple.com/us/app/todorant/id1482078243">iOS</a>, <a href="https://play.google.com/store/apps/details?id=com.todorant">Android</a>). It is a smart todo list app that uses cognitive psychology to trick your brain into finishing projects and showing results. It's free for 30 days with no strings attached, so go give it a shot if you want to improve your productivity. It helped me — it can help you as well.
 language: будь-ласка, виберіть мову.
-language_selected: <b>Temply</b> тепер говорить українською.
+language_selected_temply: <b>Temply</b> тепер говорить українською.
 newtemplate: '💪 Будь-ласка, дайте відповідь на це повідомлення у форматі <code>назва_типового_повідомлення: типове повідомлення</code>. Будь-який інший формат або звичайні повідомлення (не відповіді на це повідомлення) будуть проігноровані. Підтримується формат HTML.'
 newtemplate_success: Створено нове типове повідомлення.
 deletetemplate: Будь-ласка, виберіть типове повідомлення, яке необхідно видалити.

@@ -12,7 +12,9 @@
     "develop": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"yarn watch-ts\" \"yarn watch-js\"",
     "build-ts": "tsc --skipLibCheck",
     "watch-ts": "tsc -w --skipLibCheck",
-    "watch-js": "nodemon dist/app.js"
+    "watch-js": "nodemon dist/app.js",
+    "upload-translations": "node scripts/upload.js",
+    "download-translations": "node scripts/download.js"
   },
   "dependencies": {
     "@types/dotenv": "^6.1.1",
@@ -28,5 +30,9 @@
     "telegraf-i18n": "^6.6.0",
     "typegoose": "^5.9.1",
     "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "flat": "^5.0.0"
   }
 }
