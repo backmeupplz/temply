@@ -1,18 +1,21 @@
 // Dependencies
 import { Telegraf, ContextMessageUpdate } from 'telegraf'
 const fuzzysearch = require('fuzzysearch')
+import { v4 as uuid } from 'uuid'
 
 export function setupInline(bot: Telegraf<ContextMessageUpdate>) {
   bot.on('inline_query', async ({ inlineQuery, answerInlineQuery, dbuser }) => {
     const offset = parseInt(inlineQuery.offset) || 0
     let templates = dbuser.templates
     if (inlineQuery.query) {
-      templates = templates.filter(t => fuzzysearch(inlineQuery.query, t.text))
+      templates = templates.filter((t) =>
+        fuzzysearch(inlineQuery.query, t.text)
+      )
     }
     templates = templates.splice(offset, 30)
-    const results = templates.map(template => ({
+    const results = templates.map((template) => ({
       type: 'article',
-      id: template.name.substr(0, 32),
+      id: uuid(),
       title: template.name,
       description: template.text,
       input_message_content: {

@@ -9,7 +9,7 @@
   "private": false,
   "scripts": {
     "distribute": "yarn build-ts && node dist/app.js",
-    "develop": "concurrently -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"yarn watch-ts\" \"yarn watch-js\"",
+    "develop": "concurrently -i -k -p \"[{name}]\" -n \"TypeScript,Node\" -c \"yellow.bold,cyan.bold\" \"yarn watch-ts\" \"yarn watch-js\"",
     "build-ts": "tsc --skipLibCheck",
     "watch-ts": "tsc -w --skipLibCheck",
     "watch-js": "nodemon dist/app.js",
@@ -20,6 +20,7 @@
     "@types/dotenv": "^6.1.1",
     "@types/js-yaml": "^3.12.1",
     "@types/node": "^12.7.5",
+    "@types/uuid": "^8.3.0",
     "concurrently": "^4.1.2",
     "dotenv": "^8.1.0",
     "fuzzysearch": "^1.0.3",
@@ -29,7 +30,8 @@
     "telegraf": "^3.32.0",
     "telegraf-i18n": "^6.6.0",
     "typegoose": "^5.9.1",
-    "typescript": "^3.6.3"
+    "typescript": "^3.6.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
     "axios": "^0.19.2",
