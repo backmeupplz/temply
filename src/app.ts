@@ -30,6 +30,9 @@ setupAppendtemplate(bot)
 setupDeletetemplate(bot)
 setupPreview(bot)
 
+// Errors
+bot.catch(console.error)
+
 // Start bot
 bot.startPolling()
 
