@@ -1,29 +1,35 @@
 // Dependencies
-import { prop, Typegoose, arrayProp } from 'typegoose'
+import { Schema, model } from 'mongoose'
 
 export class Template {
-  @prop({ required: true, index: true })
   name: string
-  @prop({ required: true })
   text: string
 }
 
-export class User extends Typegoose {
-  @prop({ required: true, index: true, unique: true })
+export class User {
   id: number
-  @arrayProp({ items: Template, default: [] })
   templates: Template[]
-
-  @prop({ required: true, default: 'en' })
   language: string
-  @prop({ required: true, default: false })
   hidePreview: boolean
 }
 
-// Get User model
-const UserModel = new User().getModelForClass(User, {
-  schemaOptions: { timestamps: true },
+const templateSchema = new Schema<Template>({
+  name: { type: String, required: true, index: true },
+  text: { type: String, required: true },
 })
+
+const userSchema = new Schema<User>(
+  {
+    id: { type: Number, required: true, index: true, unique: true },
+    templates: { type: [templateSchema], default: [] },
+    language: { type: String, required: true, default: 'en' },
+    hidePreview: { type: Boolean, required: true, default: false },
+  },
+  { timestamps: true }
+)
+
+// Get User model
+const UserModel = model<User>('User', userSchema)
 
 // Get or create user
 export async function findUser(id: number) {

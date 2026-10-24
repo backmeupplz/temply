@@ -1,13 +1,11 @@
 // Dependencies
 import * as mongoose from 'mongoose'
 
-// Connect to mongoose
-mongoose.connect(
-  process.env.MONGO,
-  { useNewUrlParser: true }
-)
+// Keep Mongoose 6's strict filters and silence its Mongoose 7 deprecation warning
+mongoose.set('strictQuery', true)
 
-mongoose.set('useCreateIndex', true)
+// Connect to mongoose
+mongoose.connect(process.env.MONGO)
 
 // Export models
 export * from './User'
