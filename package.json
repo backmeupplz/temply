@@ -17,22 +17,22 @@
     "download-translations": "node scripts/download.js"
   },
   "dependencies": {
-    "@types/dotenv": "^6.1.1",
-    "@types/js-yaml": "^3.12.1",
-    "@types/node": "^22.20.5",
-    "concurrently": "^4.1.2",
     "dotenv": "^8.1.0",
     "fuzzysearch": "^1.0.3",
     "js-yaml": "^3.13.1",
     "mongoose": "^6.13.12",
-    "nodemon": "^1.19.2",
     "telegraf": "^3.32.0",
     "telegraf-i18n": "^6.6.0",
-    "typescript": "^5.9.3",
     "uuid": "^11.1.1"
   },
   "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/js-yaml": "^3.12.1",
+    "@types/node": "^22.20.5",
     "axios": "^0.34.0",
-    "flat": "^5.0.0"
+    "concurrently": "^4.1.2",
+    "flat": "^5.0.0",
+    "nodemon": "^1.19.2",
+    "typescript": "^5.9.3"
   }
 }
