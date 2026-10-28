@@ -14,6 +14,7 @@ import { setupDeletetemplate } from './commands/deletetemplate'
 import { setupPreview } from './commands/preview'
 import { setupAppendtemplate } from './commands/appendtemplate'
 import { pollWithHandover } from './helpers/handover'
+import { promo } from './helpers/promoHook'
 
 // The newest update fetched and the handlers still running, for handing polling over on deploys
 let lastUpdate = 0
@@ -27,6 +28,14 @@ bot.use(async (ctx, next) => {
   } finally {
     handling--
   }
+})
+// my_chat_member (the bot blocked or unblocked): Telegraf 3 gives it no ctx.from, so it stops here,
+// before attachUser. A private chat blocking the bot counts as harm in promo experiments
+bot.use((ctx, next) => {
+  const update = (ctx.update as any).my_chat_member
+  if (!update) return next()
+  if (update.chat.type === 'private' && update.new_chat_member.status === 'kicked')
+    promo.blocked(update.from.id)
 })
 // Check time
 bot.use(checkTime)
@@ -47,13 +56,18 @@ setupPreview(bot)
 // Errors
 bot.catch(console.error)
 
+// Promo experiments: config every 5 minutes, events every minute (off without PROMO_TOKEN)
+promo.start()
+
 // Start bot
 pollWithHandover(
   () => {
     // Telegraf 3 stops polling for good on 401/409 from getUpdates and the process
     // then idles. Exit 1 instead, so the bot gets restarted
     // (the typings omit the stopCallback argument)
-    ;(bot as any).startPolling(30, 100, undefined, () => {
+    // my_chat_member listed explicitly: blocks are the promo experiments' harm metric
+    const updates = ['message', 'callback_query', 'inline_query', 'my_chat_member']
+    ;(bot as any).startPolling(30, 100, updates, () => {
       if (stopping) return
       console.error('Polling stopped, exiting so the bot gets restarted')
       process.exit(1)
@@ -69,5 +83,6 @@ pollWithHandover(
   },
   async () => {
     while (handling) await new Promise((resolve) => setTimeout(resolve, 100))
+    await promo.stop()
   }
 )
