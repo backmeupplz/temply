@@ -11,7 +11,7 @@ permissions:
 jobs:
   check:
     # Our own PRs and pushes run on the Mac runners; outsiders' PRs (AGit via the github bot) on Linux
-    runs-on: ${{ (github.event_name != 'pull_request' || contains(fromJSON('["backmeupplz","renovate","claude"]'), github.event.pull_request.user.login)) && 'macos-latest' || 'ubuntu-latest' }}
+    runs-on: ${{ (github.event_name != 'pull_request' || contains(fromJSON('["backmeupplz","renovate","claude","radiant"]'), github.event.pull_request.user.login)) && 'macos-latest' || 'ubuntu-latest' }}
     timeout-minutes: 10
     steps:
       # Actions pinned to a commit: the runners cache those, a tag is fetched from GitHub every job (~20 s)
@@ -28,6 +28,15 @@ jobs:
         with:
           path: node_modules
           key: modules-${{ runner.os }}-${{ hashFiles('yarn.lock', '.nvmrc') }}
+      # On the Mac, node_modules stays in one fixed copy of the checkout per runner instance: writing it afresh took
+      # ~17 s of the job under load, an unchanged lockfile makes the install a no-op
+      - name: Persistent source dir (Mac)
+        if: runner.os == 'macOS'
+        run: |
+          src="$RUNNER_TOOL_CACHE/temply-src"
+          mkdir -p "$src"
+          rsync -rlpc --delete --exclude /.git --exclude /node_modules ./ "$src/"
+          echo "SRC=$src" >> "$GITHUB_ENV"
       - if: steps.modules.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile --non-interactive --cache-folder "$RUNNER_TOOL_CACHE/yarn"
-      - run: yarn -s tsc --skipLibCheck && node --test dist/helpers/promo.test.js
+        run: cd "${SRC:-.}" && yarn install --frozen-lockfile --non-interactive --cache-folder "$RUNNER_TOOL_CACHE/yarn"
+      - run: cd "${SRC:-.}" && yarn -s tsc --skipLibCheck && node --test dist/helpers/promo.test.js
